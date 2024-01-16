@@ -70,5 +70,8 @@ public class MainMenu : MonoBehaviour
         tutorPanel.gameObject.SetActive(false);
 
     }
-
+    private void OnApplicationQuit()
+    {
+        DOTween.KillAll();
+    }
 }
